@@ -5,10 +5,10 @@ public class BasicPatternMatch {
 
         //The old way
         if (thing instanceof Airplane ) {
-            Airplane plane = new Airplane();
+            Airplane plane = (Airplane) thing;
             plane.fly();
         } else if (thing instanceof Helicopter) {
-            Helicopter helicopter = new Helicopter();
+            Helicopter helicopter = (Helicopter) thing;
             helicopter.hover();
         }
 
